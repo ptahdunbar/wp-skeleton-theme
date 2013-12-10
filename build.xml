@@ -89,11 +89,11 @@
               checkreturn="true" />
     </target>
 
-	<target name="behat" description="Run acceptance tests with Behat" depends="lint">
-		<exec command="${composer.bin_path}/behat"
-		      passthru="true"
-		      checkreturn="true" />
-	</target>
+    <target name="behat" description="Run acceptance tests with Behat" depends="lint">
+        <exec command="${composer.bin_path}/behat"
+              passthru="true"
+              checkreturn="true" />
+    </target>
 
     <target name="selenium-download">
         <exec command='curl "http://selenium.googlecode.com/files/selenium-server-standalone-2.38.0.jar" -o ${project.basedir}/selenium-server.jar'
