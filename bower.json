@@ -1,0 +1,26 @@
+{
+	"name": "wp-skeleton-theme",
+	"version": "0.0.1",
+	"homepage": "https://github.com/ptahdunbar/wp-skeleton-theme",
+	"authors": [
+		"Ptah Dunbar <yarr@piratedunbar.com>"
+	],
+	"main": [
+		"style.css",
+		"index.php"
+	],
+	"directory" : "foo",
+	"license": "GPL v2",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"tests"
+	],
+	"dependencies": {
+		"foundation": "~5.0.2",
+		"foundation-icons": "*"
+	},
+	"devDependencies": {}
+}

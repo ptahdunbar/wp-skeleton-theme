@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package _s
+ * @package WPSkeletonTheme
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -28,8 +28,8 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', '_s' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
+			<h1 class="menu-toggle"><?php _e( 'Menu', 'wpst' ); ?></h1>
+			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'wpst' ); ?></a>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->

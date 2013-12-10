@@ -1,0 +1,6 @@
+.idea
+.phplint.cache
+node_modules
+build
+nbproject
+vendor

@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s
+ * @package WPSkeletonTheme
  */
 
 get_header(); ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 							 * what author we're dealing with (if that is the case).
 							*/
 							the_post();
-							printf( __( 'Author: %s', '_s' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author: %s', 'wpst' ), '<span class="vcard">' . get_the_author() . '</span>' );
 							/* Since we called the_post() above, we need to
 							 * rewind the loop back to the beginning that way
 							 * we can run the loop properly, in full.
@@ -36,31 +36,31 @@ get_header(); ?>
 							rewind_posts();
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', '_s' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', 'wpst' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', '_s' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', '_s' ) ) . '</span>' );
+							printf( __( 'Month: %s', 'wpst' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'wpst' ) ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', '_s' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', '_s' ) ) . '</span>' );
+							printf( __( 'Year: %s', 'wpst' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'wpst' ) ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', '_s' );
+							_e( 'Asides', 'wpst' );
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', '_s');
+							_e( 'Images', 'wpst');
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', '_s' );
+							_e( 'Videos', 'wpst' );
 
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', '_s' );
+							_e( 'Quotes', 'wpst' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', '_s' );
+							_e( 'Links', 'wpst' );
 
 						else :
-							_e( 'Archives', '_s' );
+							_e( 'Archives', 'wpst' );
 
 						endif;
 					?>
@@ -87,7 +87,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php _s_paging_nav(); ?>
+			<?php wpst_paging_nav(); ?>
 
 		<?php else : ?>
 
