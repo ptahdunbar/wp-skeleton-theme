@@ -14,11 +14,12 @@ use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode
 ;
 
-// Require 3rd-party libraries here:
+require_once 'vendor/autoload.php';
+
 require_once 'PHPUnit/Autoload.php';
 require_once 'PHPUnit/Framework/Assert/Functions.php';
 
-require_once 'TestContext.php';
+require_once 'tests/bootstrap-wp.php';
 
 class FeatureContext extends BehatContext
 {
