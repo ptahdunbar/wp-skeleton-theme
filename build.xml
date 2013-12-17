@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="WP Skeleton Plugin" default="build" basedir=".">
+<project name="WP Skeleton Theme" default="build" basedir=".">
 
     <property name="env" value="development" />
     <property name="composer.exec" value="composer" />
@@ -13,7 +13,7 @@
     <property name="build.db_host" value="localhost" />
     <property name="build.db_user" value="root" />
     <property name="build.db_pass" value="root" />
-    <property name="build.type" value="plugin" />
+    <property name="build.type" value="theme" />
 
     <property name="build.wp_core_repo" value="git://github.com/WordPress/WordPress.git" />
     <property name="build.wp_core_path" value="/tmp/wordpress" />
