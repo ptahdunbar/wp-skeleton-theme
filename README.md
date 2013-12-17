@@ -19,11 +19,11 @@
 ```
 git clone git@github.com:ptahdunbar/wp-skeleton-theme.git
 ```
+
 ## Features
 
 * Supports [PHPUnit](http://phpunit.de/manual/) and [Behat](http://behat.org/) for automated testing.
 * Supports [Travis CI](https://travis-ci.org/) for continuous integration.
 * Supports [Phing](http://www.phing.info/) for task automation.
 * Supports [Composer](http://getcomposer.org/) and [Bower](http://bower.io/) for vendoring dependencies.
-* Supports [Github Updater](https://github.com/afragen/github-updater)
 * Includes a `.pot` as a starting translation file.
