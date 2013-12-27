@@ -1,6 +1,22 @@
-.idea
+# System files & Artifacts
+.DS_Store
 .phplint.cache
-node_modules
+build.properties
 build
+selenium-server.jar
+node_modules
+npm-debug.log
+
+# IDE
+.idea
 nbproject
+
+# Vagrant
+.vagrant
+varrgrant.json
+
+# Composer
 vendor
+
+# Project files
+tests/wp-tests-config.php
